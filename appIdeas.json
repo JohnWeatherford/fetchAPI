@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "name": "FocusFlow",
+    "shortDescription": "A focused-work session manager with adaptive timers and distraction blocking.",
+    "description": "Schedules Pomodoro-like focused sessions that adapt based on user performance, integrates site/app blocking, and provides analytics on attention patterns.",
+    "targetAudience": "Knowledge workers, students, remote teams",
+    "coreFeatures": [
+      "Adaptive Pomodoro timer",
+      "Website/app blocking",
+      "Session analytics and streaks",
+      "Calendar and task integration",
+      "Team focus rooms"
+    ],
+    "techStack": ["React", "Electron or React Native", "Node.js", "SQLite"],
+    "monetization": "Freemium (basic free, premium advanced analytics & team features)",
+    "estimatedDifficulty": "Medium",
+    "prototypeTimeDays": 7,
+    "tags": ["productivity", "timers", "remote"]
+  },
+  {
+    "id": 2,
+    "name": "LocalHarvest",
+    "shortDescription": "Discover and trade locally-grown produce and homemade goods.",
+    "description": "Marketplace connecting local growers and makers with neighbors; includes pickup scheduling, seasonal availability calendar, and simple listings.",
+    "targetAudience": "Community members, small producers",
+    "coreFeatures": [
+      "Map-based discovery",
+      "Simple listings with availability",
+      "Pickup scheduling and messaging",
+      "Ratings and trust badges"
+    ],
+    "techStack": ["React Native", "Firebase", "Stripe"],
+    "monetization": "Transaction fees, promoted listings",
+    "estimatedDifficulty": "Medium",
+    "prototypeTimeDays": 10,
+    "tags": ["marketplace", "community", "food"]
+  },
+  {
+    "id": 3,
+    "name": "MicroHabit",
+    "shortDescription": "Tiny daily habit builder using micro-actions and reminders.",
+    "description": "Encourages lasting habit formation by breaking goals into micro-actions (30s–2min) with adaptive scheduling and gamified streaks.",
+    "targetAudience": "Self-improvement seekers, busy people",
+    "coreFeatures": ["Micro-action planning", "Smart reminders", "Streaks and rewards", "Cross-device sync"],
+    "techStack": ["Flutter", "Supabase", "Push notifications"],
+    "monetization": "One-time purchase or subscription for advanced features",
+    "estimatedDifficulty": "Low",
+    "prototypeTimeDays": 5,
+    "tags": ["health", "habit", "wellness"]
+  },
+  {
+    "id": 4,
+    "name": "Recipe Remix",
