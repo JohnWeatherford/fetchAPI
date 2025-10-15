@@ -1,35 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>John's Apps</title>
-</head>
-<body>
-  <!--https://raw.githubusercontent.com/JohnWeatherford/fetchAPI/refs/heads/main/appIdeas.json-->
-<h1>John's apps</h1>
-<ul id="apps-list">
-  <li>FocusFlow</li>
-    <li>TaskMaster</li>
-    <li>NoteNinja</li>
-</ul>
-<script>
 
-    fetach('https://raw.githubusercontent.com/JohnWeatherford/fetchAPI/refs/heads/main/appIdeas.json').then(
-        response => response.json())
-        
-    .then(data => {
-            const appsList = document.getElementById('appIdeas');
-            data.forEach(app => {
-            const listItem = document.createElement('li');
-            listItem.textContent = app.name;
-            appsList.appendChild(listItem);
-            });
-        }
-        ).catch(
-        error => console.error('Error fetching app ideas:', error)
-    )
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John's Apps</title>
+</head>
+
+<body>
+    <!--https://raw.githubusercontent.com/JohnWeatherford/fetchAPI/refs/heads/main/appIdeas.json-->
+    <h1>John's apps</h1>
+    <ul id="apps-list">
+
+    </ul>
+
     <script>
-</body>
-</html>
-  
+        fetch('https://barrycumbie.github.io/redesigned-giggle-fetchAPI/appIdeas.json')
+            .then(response => response.json()).then(data => {
+
+                // console.log(data.projects[3].name);
+                const appIdeasList = document.getElementById('apps-list');
+                appIdeasList.innerHTML = ''; // Clear existing list items
+                data.projects.forEach(idea => {
+                    console.log(idea);
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${idea.name}, ${idea.description}`;
+                    appIdeasList.appendChild(listItem);
+                });
+            })
+            .catch(error => console.error('Error fetching app ideas:', error));
+
+
+
+        </script>
+        </body>
+</html >
+    
