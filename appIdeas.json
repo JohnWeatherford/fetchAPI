@@ -52,3 +52,117 @@
   {
     "id": 4,
     "name": "Recipe Remix",
+    "shortDescription": "Generate recipes from what's in your fridge and dietary preferences.",
+    "description": "Input available ingredients and dietary restrictions; returns ranked recipe ideas, shopping suggestions, and portion adjustments.",
+    "targetAudience": "Home cooks, students, families",
+    "coreFeatures": [
+      "Ingredient-based recipe generator",
+      "Dietary filters",
+      "Smart shopping list",
+      "Leftover suggestions"
+    ],
+    "techStack": ["Next.js", "Python (recipe engine)", "Postgres", "OpenAI API (optional)"],
+    "monetization": "Ads + premium meal plans",
+    "estimatedDifficulty": "Medium",
+    "prototypeTimeDays": 8,
+    "tags": ["food", "recipes", "ai"]
+  },
+  {
+    "id": 5,
+    "name": "MeetPrep",
+    "shortDescription": "Prep assistant for meetings: agendas, concise briefs, and follow-ups.",
+    "description": "Generates meeting agendas from goals, summarizes meeting notes, assigns action items, and integrates with calendar and chat tools.",
+    "targetAudience": "Managers, teams, consultants",
+    "coreFeatures": [
+      "Agenda builder",
+      "Auto-summarize meeting notes",
+      "Action item tracker",
+      "Calendar + Slack/Teams integration"
+    ],
+    "techStack": ["React", "Node.js", "Google Calendar API", "OpenAI API (optional)"],
+    "monetization": "Subscription for team features",
+    "estimatedDifficulty": "Medium",
+    "prototypeTimeDays": 12,
+    "tags": ["productivity", "team", "ai"]
+  },
+  {
+    "id": 6,
+    "name": "PocketLedger",
+    "shortDescription": "Simple personal finance tracker with goal-based saving.",
+    "description": "Track income & spending quickly, set savings goals, visualize progress, and get low-effort budgeting tips.",
+    "targetAudience": "Anyone wanting basic finance tracking",
+    "coreFeatures": ["Quick-entry transactions", "Goals and envelopes", "Spending categories", "Export/backup"],
+    "techStack": ["Ionic or React Native", "SQLite", "Optional Plaid integration"],
+    "monetization": "Paid app / in-app pro features",
+    "estimatedDifficulty": "Low",
+    "prototypeTimeDays": 7,
+    "tags": ["finance", "personal", "budget"]
+  },
+  {
+    "id": 7,
+    "name": "SkillSwap",
+    "shortDescription": "Peer-to-peer micro-tutoring & skill exchange platform.",
+    "description": "Users offer short lessons or skill sessions in exchange for credits or barter; includes scheduling, ratings, and short course bundles.",
+    "targetAudience": "Lifelong learners, freelancers, hobbyists",
+    "coreFeatures": ["Profile with skills", "Credit-based exchange", "Scheduling and video sessions", "Bundles & reviews"],
+    "techStack": ["Vue.js", "Node.js", "WebRTC", "Stripe"],
+    "monetization": "Transaction fees, premium profiles",
+    "estimatedDifficulty": "High",
+    "prototypeTimeDays": 14,
+    "tags": ["education", "marketplace", "video"]
+  },
+  {
+    "id": 8,
+    "name": "Wardrobe Wizard",
+    "shortDescription": "Virtual closet and outfit planner with weather-aware suggestions.",
+    "description": "Upload clothing items, tag outfits, plan looks on a calendar, and get suggestions based on weather and events.",
+    "targetAudience": "Fashion-conscious users, travelers",
+    "coreFeatures": [
+      "Photo-based wardrobe catalog",
+      "Outfit planner and calendar",
+      "Weather-aware recommendations",
+      "Packing list generator"
+    ],
+    "techStack": ["React Native", "AWS S3", "Weather API"],
+    "monetization": "Freemium with premium outfit analytics",
+    "estimatedDifficulty": "Medium",
+    "prototypeTimeDays": 9,
+    "tags": ["lifestyle", "planning", "fashion"]
+  },
+  {
+    "id": 9,
+    "name": "QuietSpace",
+    "shortDescription": "Find nearby quiet places to work or study with user reviews.",
+    "description": "Map-based discovery of quiet cafes, libraries, and co-working spots with noise level tags, seating info, and reservation links.",
+    "targetAudience": "Remote workers, students, travellers",
+    "coreFeatures": [
+      "Noise-level crowdsourced ratings",
+      "Seating and power outlet info",
+      "Filters (wifi, food, reservations)",
+      "Offline map mode"
+    ],
+    "techStack": ["React Native", "Mapbox", "Firebase"],
+    "monetization": "Sponsored placements, affiliate bookings",
+    "estimatedDifficulty": "Medium",
+    "prototypeTimeDays": 10,
+    "tags": ["local", "travel", "productivity"]
+  },
+  {
+    "id": 10,
+    "name": "CodeSnack",
+    "shortDescription": "Daily bite-sized coding challenges with in-app editor and hints.",
+    "description": "Short focused coding puzzles (5–15 minutes) across languages, progress tracking, mentor hints, and leaderboard.",
+    "targetAudience": "Developers, learners preparing interviews",
+    "coreFeatures": [
+      "Daily challenges",
+      "In-app editor and test runner",
+      "Hints and solutions",
+      "Progress streaks and leaderboards"
+    ],
+    "techStack": ["Next.js", "Docker runner for sandboxed tests", "Postgres"],
+    "monetization": "Subscription for premium problems and hints",
+    "estimatedDifficulty": "Medium",
+    "prototypeTimeDays": 14,
+    "tags": ["education", "coding", "challenges"]
+  }
+]
